@@ -7,6 +7,6 @@ RUN apt-get update
 RUN apt-get -y install clang inotify-tools
 
 COPY . .
-RUN chmod +x ./watch.sh
+RUN chmod +x ./watch.bash
 
-ENTRYPOINT ["bash", "watch.sh"]
+ENTRYPOINT ["bash", "watch.bash"]
